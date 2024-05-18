@@ -1,0 +1,34 @@
+<html>
+<head>
+<link rel="stylesheet" href="css.css">
+<h1>RESULT</h1>
+</head>
+<body><center><h3>
+<script type="text/javascript">
+	var r= sessionStorage.getItem("s3");
+        document.write("<h2>Score:&nbsp;",r);
+        document.write("</h2>")
+        if(12<=r)
+        {
+         document.write("<h3>OUTSTANDING</h3>");
+         document.write("<h4><br>level:proficient</h4>");
+        }	
+        else if(9<r)
+        {
+         document.write("<h3>VERY GOOD!</h3>");
+         document.write("<h4><br>level:skilled</h4>");
+        }	
+        else if(5<r)
+        {
+         document.write("<h3>Good!</h3>");
+         document.write("<h4><br>level:intermediate</h4>");
+        }	
+        else if(r<=5)
+        {
+         document.write("<h3>Do well next time!</h3>");
+         document.write("<h4><br>level:beginner</h4>");
+        }	
+</script></h3>
+</center>
+</body>
+</html>
